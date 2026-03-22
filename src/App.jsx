@@ -1,21 +1,29 @@
+import Appname from "./components/Appname";
+import Addtask from "./components/Addtask";
+import Todoitems from "./components/Todo-items"
+import "./App.css";
 function App() {
+  const itemlist = [
+    {
+      taskname: "coding",
+      lastdate: "22/03/2026",
+    },
+    {
+      taskname: "Assignments",
+      lastdate: "25/03/2026",
+    }
+  ];
   return (
-    <center>
-      <h1>TO-DO APP</h1>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-6">
-            <input type="text" placeholder="Enter the TaskName"></input>
-          </div>
-          <div class="col-4">
-            <input type="date"/>
-          </div>
-          <div class="col-2">
-            <button type="button" class="btn btn-success">submit</button>
-          </div>
-        </div>
+    <div className="dabba">
+      <div className="mainContain">
+        <center>
+          <Appname></Appname>
+          <Addtask></Addtask>
+          <Todoitems items={itemlist}></Todoitems>
+          
+        </center>
       </div>
-    </center>
+    </div>
   );
 }
 

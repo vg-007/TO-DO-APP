@@ -1,0 +1,32 @@
+.dabba{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+        /* horizontal center */
+    align-items: center;
+        /* vertical center */
+}
+
+.mainContain{
+    justify-content: center;/*horizontal*/
+    align-items: center;/*vertical*/
+    width:650px;
+    height: 450px;
+    border: 2px solid black ;
+    position: absolute;
+}
+h1{
+    font-weight:bolder;
+    background-color: aqua;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.row{
+    margin: 10px 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    width: 100%;
+}
+.container{
+    margin: 10px;
+}
